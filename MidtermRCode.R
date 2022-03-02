@@ -42,11 +42,12 @@ pred <- predict(reg, data= valid_data)
 
 
 # use accuracy() to compute common accuracy measures.
+#ACCURACY OF VALIDATION how our model performed
 options(scipen = 999)
 accuracy(pred, valid_data$Price)
 
 
-#accuracy of training
+#accuracy of training, seeing error when training the model 
 options(scipen = 999)
 accuracy(reg$fitted.values, train_data$Price)
 
